@@ -14,6 +14,26 @@
 - [movies.csv](./data/movies.csv) и [ratings.csv](./data/ratings.csv) -- использованные части исходного датасета;
 - [Research.ipynb](./notebooks/Research.ipynb) -- `jupyter notebook`, в котором проверялись основные подходы к построению рекомендательных систем;
 - [Classes.ipynb](./notebooks/Classes.ipynb) -- `jupyter notebook`, содержащий в себе финальные алгоритмы, обернутые в классы с методами `.fit()` и `.predict()`, а так же уникальными методами. 
+- [src/](./src/) -- deploy
+
+## deploy
+
+```bash
+sudo docker build -t recom .
+sudo docker run -it -p 8888:8888 --name recom_running recom
+```
+
+```bash
+curl -X POST -d "method=collaborative&user_id=407" "http://localhost:8888/recommend/"
+```
+
+```bash
+{"body":"['Shawshank Redemption, The (1994)', 'Forrest Gump (1994)', 'Pulp Fiction (1994)', 'Silence of the Lambs, The (1991)', 'Braveheart (1995)', \"Schindler's List (1993)\", 'Jurassic Park (1993)', 'Terminator 2: Judgment Day (1991)', 'Usual Suspects, The (1995)', 'Toy Story (1995)']"}
+```
+
+```bash
+sudo docker rm recom_running
+```
 
 ## Ход работы
 
