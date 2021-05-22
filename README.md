@@ -11,9 +11,9 @@
 
 ## Содержимое
 
-- [./data/movies.csv](movies.csv) и [./data/ratings.csv](ratings.csv) -- использованные части исходного датасета;
-- [./notebooks/Research.ipynb](Research.ipynb) -- `jupyter notebook`, в котором проверялись основные подходы к построению рекомендательных систем;
-- [./notebooks/Classes.ipynb](Classes.ipynb) -- `jupyter notebook`, содержащий в себе финальные алгоритмы, обернутые в классы с методами `.fit()` и `.predict()`, а так же уникальными методами. 
+- [movies.csv](./data/movies.csv) и [ratings.csv](./data/ratings.csv) -- использованные части исходного датасета;
+- [Research.ipynb](./notebooks/Research.ipynb) -- `jupyter notebook`, в котором проверялись основные подходы к построению рекомендательных систем;
+- [Classes.ipynb](./notebooks/Classes.ipynb) -- `jupyter notebook`, содержащий в себе финальные алгоритмы, обернутые в классы с методами `.fit()` и `.predict()`, а так же уникальными методами. 
 
 ## Ход работы
 
